@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="En">
+<head>
+  <meta charset="UTF-8">
+  <title> Calculatr </title>
+  <link rel="stylesheet" type="text/css" href="calc.css" title="style" />
+  <script src="calc.js"></script>
+</head>
+<body onkeypress="myFunction()">
+  <header>
+    <h1> Calculator </h1>
+  </header>
+
+	<div class="calculator"">
+		<div class="calcDisplay" id="calcDisplay">
+		0
+		</div>
+    <div id="model" style="text-align:right">CASIO fx-2500</div>
+    <div class="functionKeys">
+      <button class="funcKey" style="font-size:10px">ON/OFF</button>
+      <button class="funcKey">mode</button>
+      <button class="funcKey">log</button>
+      <button class="funcKey">ln</button>
+      <button class="funcKey">x^y</button>
+      <button class="funcKey">+/-</button>
+      <button class="funcKey">√</button>
+      <button class="funcKey">sin</button>
+      <button class="funcKey">cos</button>
+      <button class="funcKey">tan</button>
+      <button class="funcKey">tan</button>
+      <button class="funcKey">√</button>
+      <button class="funcKey">sin</button>
+      <button class="funcKey">cos</button>
+      <button class="funcKey">tan</button>
+      <button class="funcKey">tan</button>
+      <button class="funcKey">√</button>
+      <button class="funcKey">sin</button>
+    </div>
+
+		<div class="calcKeypad">
+			<button onclick="myFunction()">7</button>
+			<button>8</button>
+			<button>9</button>
+			<button class="opKey" data-action="divide">÷</button>
+			<button class="acKey" data-action="clear">AC</button>
+			<button>4</button>
+			<button>5</button>
+			<button>6</button>
+			<button class="opKey" data-action="multiply">&times;</button>
+			<button>1</button>
+			<button>2</button>
+			<button>3</button>
+			<button class="opKey" data-action="subtract">&minus;</button>
+			<button class="eqKey" data-action="calculate">=</button>
+			<button class="zeroKey">0</button>
+			<button data-action="decimal">.</button>
+			<button class="opKey" data-action="add">+</button>
+		</div>
+	</div>
+
+  <footer>&copy; Author: <span>Andriy Pavlovych</span> </footer>
+</body>
+</html>
