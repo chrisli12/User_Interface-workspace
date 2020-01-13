@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="En">
+<head>
+  <meta charset="UTF-8">
+  <title> Calculator </title>
+  <link rel="stylesheet" type="text/css" href="a1.css" title="style" />
+  <script src="a1.js"></script>
+</head>
+<body onkeypress="myFunction()">
+  <header>
+    <h1> CASIO fx-2500 Calculator </h1>
+  </header>
+
+	<div class="calculator">
+		<div class="displayBorder"><div class="calcDisplay" id="calcDisplay">0</div></div>
+        <div id="model" style="text-align:right; font-size:20px; height:90px;" >
+            <i>CASIO fx-2500 <br><span style="font-size:10px; color: #3399FF;">scientific calculator</i></span><p> </p>
+        </div>
+    <div class="functionKeys">
+      <button class="funcKey" style="color: white; font-size:10px; background-color:#555555;">ON/OFF</button>
+      <button class="funcKey"><span style="color: #964B00;">INV</span></button>
+      <button class="funcKey">MODE</button>
+      <button class="funcKey">log <span style="color: #964B00;">10<sup>x</sup></span></button>
+      <button class="funcKey">ln<span style="color: #964B00;">e<sup>x</sup></span></button>
+      <button class="funcKey">x^y</button>
+      <button class="funcKey">+/-</button>
+      <button class="funcKey" data-ops="root" data-fun="√">√<span style="color: #964B00;">x<sup>z</sup></button>
+      <button class="funcKey">' " </button>
+      <button class="funcKey" id="sinKey" data-ops="sin" data-fun="sin(">sin<sup style="color:#964B00">-1</sup></button>
+      <button class="funcKey">cos<sup style="color:#964B00">-1</sup></button>
+      <button class="funcKey">tan<sup style="color:#964B00">-1</sup></button>
+      <button class="funcKey">1/x <span style="color: #964B00;">x!</span></button>
+      <button class="funcKey">X-Y<span style="color: #964B00;">M</span></button>
+      <button class="funcKey">[(</button>
+      <button class="funcKey">)]</button>
+      <button class="funcKey">M in</button>
+      <button class="funcKey">MR</button>
+    </div>
+
+		<div class="calcKeypad">
+			<button class="numKey" data-num="7" >7</button>
+			<button class="numKey" data-num="8">8</button>
+			<button class="numKey" data-num="9">9</button>
+			<button id="clear1" class="clear" data-action="clear">C</button>
+			<button id="clear" class="clear" data-action="clear" style="font-size: 15px;">AC</button>
+			<button class="numKey" data-num="4">4</button>
+			<button class="numKey" data-num="5">5</button>
+			<button class="numKey" data-num="6">6</button>
+			<button class="opKey" data-ops="times">&times;</button>
+      <button class="opKey" data-ops="divided by">÷</button>
+      <button class="numKey" data-num="1">1</button>
+			<button class="numKey" data-num="2">2</button>
+			<button class="numKey" data-num="3">3</button>
+			<button class="opKey" data-ops="minus">&minus;</button>
+      <button class="opKey" data-ops="plus">+</button>
+			<button class="numKey" data-num="0">0</button>
+      <button class="numKey" data-num=".">.</button>
+      <button class="oKey" style="font-size: 13px;">exp</button>
+			<button class="eqKey" id="equal" data-result="">=</button>
+      <button class="oKey" style="font-size: 15px;">M+</button>
+		</div>
+	</div>
+
+</body>
+</html>

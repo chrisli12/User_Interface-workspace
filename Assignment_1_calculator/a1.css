@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  background-color:LightGrey;
+}
+
+body {
+	font-family: NimbusSanL, Arial, sans-serif;
+	text-align: center;
+	color:#202020;
+	background-color:Silver;
+}
+
+div {
+	border:1px solid SlateGrey;
+	border-radius:2px;
+    margin: 18px;
+}
+div.displayBorder{
+  border-width: 7px;
+  border-style: solid;
+  border-color: Black;
+  border-radius: 4px;
+}
+
+div.calcDisplay {
+  background-color: #98ba8d;
+  color: CharcoalGrey;
+  font-size: 1.75em;
+  padding: 0.3em 0.5em;
+  text-align: right;
+  border-width: 3px;
+  border-style: solid;
+  margin: 4px;
+}
+
+#model{
+  font-size: 25px;
+  border: 0px;
+}
+
+div.functionKeys{
+  background-color: black;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: auto auto auto auto auto auto;
+  height: 160px;
+  padding: 3px;
+}
+
+.funcKey{
+
+  height: 100%;
+  font-size: 15px;
+  border-radius:4px;
+  padding: 5px 5px;
+}
+
+div.calcKeypad {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: auto auto auto auto auto ;
+	height: 40%;
+  margin: 20px;
+  border-radius:4px;
+}
+
+.input {
+	border:none;
+	text-align:right;
+}
+.calcKeypad {
+  width: 350px;
+  align-self: center;
+  margin: auto;
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.opKey, .eqKey, .clear, .oKey{
+  background-color: black;
+  color: LightGrey;
+  border-radius:4px;
+}
+
+.numKey {
+  background-color: black;
+  color: LightGrey;
+  border-radius:4px;
+}
+
+
+
+
+p {
+	text-align:right;
+	padding: 20px;}
+
+input, button {
+	font:inherit;
+	color:Blue;
+	width:100%;
+	height:100%
+	padding-left: 5px;
+}
+
+button {
+    color:DarkSlateGrey;
+}
+
+button:hover,
+button:active
+{
+	background-color: DarkGrey;
+}
+
+strong {
+	font-family: NimbusSanL, Arial, sans-serif;
+	font-size:1.2em;
+	color:Green;
+	text-decoration:bold;
+}
+
+footer{
+	padding-top:10px;
+	text-align:center;
+	font-size:10px;
+	color:LightSlateGrey;
+}
+
+/* Responsive layout - makes the columns stack on
+   top of each other instead of next to each other */
+
+  [class*="calculator"] {
+     width: 60%;
+     display:inline-block;
+     height:80vh;
+	 font-size:1.2em;
+  }
+
+@media screen and (min-width:600px) {
+  [class*="calculator"] {
+    width:400px;
+  }
+
+}
